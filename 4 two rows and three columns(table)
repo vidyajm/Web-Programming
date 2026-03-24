@@ -1,28 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title> simple table</title>
+<title>Simple table</title>
 </head>
 <body>
 <center>
 <h1> Simple HTML table</h1>
 <table border="2" width="50%" align="center">
+
 <tr align="center">
 <th> Roll No</th>
 <th> Name</th>
 <th> Subject </th>
 </tr>
+
 <tr align="center">
 <td> 1 </td>
-<td> Zuha</td>
-<td> Computer Science </td>
+<td> Saif</td>
+<td> Computer Science</td>
 </tr>
+
 <tr align="center">
 <td> 2 </td>
-<td> Sneha</td>
-<td> Chemistry</td>
+<td> Mrutyu</td>
+<td> MBA</td>
 </tr>
+
 </table>
 </center>
 </body>
