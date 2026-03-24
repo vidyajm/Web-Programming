@@ -18,17 +18,17 @@ text-align:center;
 .image{
 text-align:center;
 }
-.center-image{
+.center-image(
 align-items:center;
 width:300px;
 height:300px;
-border-radius:10px;
-}
+border-radius:20px;
 </style>
 </head>
 <body>
 <div class="image-container">
-<img src="educate.avif" alt="Example Image" class="center-image" >
+<img src="wbimages.jpg" alt="Example Image" class="center-image" >
 </div>
 </body>
 </html>
+
