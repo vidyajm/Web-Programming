@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> First program</title>
+</head>
+<body style bgcolor=#B0E0E6>
+<!--heading-->
+<h1> HTML page</h1>
+<!-- paragraph-->
+<p style="text-align: justify; line-height: 1.5;">AI encompasses various technologies,
+including machine learning, natural language processing, and computer vision,
+allowing systems to learn from data, recognize patterns, and make decisions. It has
+become an integral part of our daily lives, powering applications such as virtual
+assistants like Siri and Alexa, recommendation systems on platforms like Netflix and
+Amazon, and even self-driving cars. </p>
+<img src="2.webp" alt= "Example images" height="200px" width="200px">
+</body>
+</html>
