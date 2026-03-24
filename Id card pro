@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>RCUB Student ID Card</title>
+<style>
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, sans-serif;
+ background: linear-gradient(135deg, #e8eef3, #f6f8fa);
+}
+.id-card {
+ width: 350px;
+ margin: 50px auto;
+ background-color: #fdfdf8; /* soft off-white */
+ border: 2px solid #003366;
+ border-radius: 10px;
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+ text-align: center;
+}
+/* =====================
+HEADER
+====================== */
+.header {
+ background: linear-gradient(90deg, #003366, #00509e);
+ color: #e6f2ff;
+ padding: 12px 10px;
+ border-radius: 8px 8px 0 0;
+}
+.header h2 {
+ margin: 5px 0;
+ font-size: 18px;
+}
+.header h3 {
+ margin: 0;
+ font-size: 14px;
+ font-weight: normal;
+}
+/* =====================
+PHOTO
+====================== */
+.photo {
+ margin: 15px 0;
+}
+.photo img {
+ width: 100px;
+ height: 120px;
+ border: 2px solid #003366;
+ border-radius: 5px;
+ background-color: #eef3f8;
+}
+/* =====================
+DETAILS
+====================== */
+.details {
+ text-align: left;
+ padding: 10px 20px;
+ font-size: 14px;
+ background-color: #f7f9fc;
+}
+.details p {
+ margin: 6px 0;
+}
+/* =====================
+ID NUMBER
+====================== */
+.id-number {
+ background: linear-gradient(90deg, #003366, #004080);
+ color: #ffffff;
+ padding: 10px;
+ border-radius: 0 0 8px 8px;
+ font-weight: bold;
+ font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="id-card">
+ <!-- HEADER -->
+ <div class="header">
+ <h2>Rani Channamma University</h2>
+ <h3>Belagavi</h3>
+ </div>
+ <!-- PHOTO -->
+ <div class="photo">
+ <img src="student.jpeg" alt="Student Photo" />
+ </div>
+ <!-- DETAILS -->
+ <div class="details">
+ <p><strong>Name:</strong> Vidya Mudigoudar</p>
+ <p><strong>Course:</strong> MCA</p>
+ <p><strong>Department:</strong> Computer Science</p>
+ <p><strong>Year:</strong> 2nd Year</p>
+ </div>
+ <!-- ID NUMBER -->
+ <div class="id-number">
+ ID No: P15ZZ24S126020
+ </div>
+</div>
+</body>
+</html>
