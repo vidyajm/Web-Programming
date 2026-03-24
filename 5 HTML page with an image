@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Centered Image Page</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#E0FFFF;
+margin:0;
+padding:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+.image{
+text-align:center;
+}
+.center-image{
+align-items:center;
+width:300px;
+height:300px;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+<div class="image-container">
+<img src="educate.avif" alt="Example Image" class="center-image" >
+</div>
+</body>
+</html>
