@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canvas Hexagon</title>
+
+<style>
+body {
+    text-align: center;
+    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    border: 2px solid #3a3a3a;
+    background: #ffffff;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Canvas Hexagon</h1>
+
+<canvas id="myCanvas" width="400" height="350"></canvas>
+
+<script>
+// Get canvas and context
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+// Function to draw polygon
+function drawPolygon(ctx, x, y, radius, sides) {
+    var angleStep = (2 * Math.PI) / sides;
+    var startAngle = -Math.PI / 2; // Start from top
+
+    ctx.beginPath();
+
+    ctx.moveTo(
+        x + radius * Math.cos(startAngle),
+        y + radius * Math.sin(startAngle)
+    );
+
+    for (var i = 1; i <= sides; i++) {
+        ctx.lineTo(
+            x + radius * Math.cos(startAngle + i * angleStep),
+            y + radius * Math.sin(startAngle + i * angleStep)
+        );
+    }
+
+    ctx.closePath();
+
+    // Gradient fill
+    var gradient = ctx.createLinearGradient(0, 0, 400, 350);
+    gradient.addColorStop(0, "#74ebd5");
+    gradient.addColorStop(1, "#9face6");
+
+    ctx.fillStyle = gradient;
+    ctx.strokeStyle = "#1e3a8a";
+    ctx.lineWidth = 3;
+
+    ctx.fill();
+    ctx.stroke();
+}
+
+// Draw hexagon
+drawPolygon(ctx, 200, 175, 100, 6);
+</script>
+
+</body>
+</html>
