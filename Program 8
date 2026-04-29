@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Even or Odd Checker</title>
+
+<script>
+function checkNumber() {
+    // Ask user to enter a number
+    let num = prompt("Enter a number:");
+
+    // Convert entered value to a number
+    num = Number(num);
+
+    // Check if input is a valid number
+    if (isNaN(num)) {
+        alert("Please enter a valid number!");
+    } else {
+        // Check if number is even or odd
+        if (num % 2 === 0) {
+            alert(num + " is an EVEN number.");
+        } else {
+            alert(num + " is an ODD number.");
+        }
+    }
+}
+</script>
+
+</head>
+
+<body style="text-align:center; margin-top:40px;">
+<h2>Check if a Number is Even or Odd</h2>
+
+<button onclick="checkNumber()"
+style="padding:10px 20px; font-size:16px; background: linear-gradient(45deg, #ff6b6b, #845ec2); cursor: pointer; color: white;">
+Click to Enter Number
+</button>
+
+</body>
+</html>
