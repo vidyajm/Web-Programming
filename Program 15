@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canvas Shapes Example</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+}
+
+canvas {
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Canvas Drawing: Triangle, Rectangle, Circle, Line</h2>
+
+<canvas id="myCanvas" width="400" height="300"></canvas>
+
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+// ---------------- RECTANGLE ----------------
+ctx.fillStyle = "#6a5acd"; // slate blue
+ctx.fillRect(30, 30, 140, 90);
+
+// ---------------- CIRCLE ----------------
+ctx.beginPath();
+ctx.arc(300, 90, 50, 0, Math.PI * 2);
+ctx.fillStyle = "#ff69b4"; // hot pink
+ctx.fill();
+
+// ---------------- TRIANGLE ----------------
+ctx.beginPath();
+ctx.moveTo(80, 150);
+ctx.lineTo(40, 250);
+ctx.lineTo(140, 250);
+ctx.closePath();
+ctx.fillStyle = "#20b2aa"; // light sea green
+ctx.fill();
+
+// ---------------- LINE ----------------
+ctx.beginPath();
+ctx.moveTo(220, 200);
+ctx.lineTo(360, 260);
+ctx.lineWidth = 4;
+ctx.strokeStyle = "#ff8c00"; // dark orange
+ctx.stroke();
+</script>
+
+</body>
+</html>
