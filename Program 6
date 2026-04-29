@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Greeting Alert Example</title>
+<script>
+function showGreeting() {
+    alert("Hello! Welcome to my webpage");
+}
+</script>
+</head>
+
+<body style="text-align:center; margin-top:100px; font-family:'Times New Roman', serif;">
+<h2>Click the Button to See Alert message</h2>
+
+<!-- Button that calls JavaScript function -->
+<button onclick="showGreeting()" 
+style="padding:10px 20px; font-size:16px; cursor:pointer; background-color:#800000; color:white;">
+Click Here
+</button>
+
+</body>
+</html>
