@@ -5,17 +5,15 @@
 
 <script>
 function checkNumber() {
-    // Ask user to enter a number
     let num = prompt("Enter a number:");
 
-    // Convert entered value to a number
+    
     num = Number(num);
 
-    // Check if input is a valid number
+
     if (isNaN(num)) {
         alert("Please enter a valid number!");
     } else {
-        // Check if number is even or odd
         if (num % 2 === 0) {
             alert(num + " is an EVEN number.");
         } else {
